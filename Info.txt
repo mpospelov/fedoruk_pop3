@@ -1,0 +1,27 @@
+Compile:
+$ g++ POP3_client.c -o POP3_client
+либо
+$ make compile
+
+Usage:
+$ ./POP3_client [host] [username] [password]
+либо
+$ make run
+
+Clean:
+$ make clean
+
+Помещаете все 3 файла в одну папочку.
+Можете потестить на своей почте. Главное знать имя сервера (т.е. адрес).
+Я, например, пробовал свою старую почту на рамблере: 'pop3.rambler.ru'
+
+
+Type any of the following commands:
+	STAT	- display number of mails and total size
+	LIST	- list all mails' sizes
+	LIST n	- list n mail's size
+	RETR n	- retrieve n's mail
+	DELE n	- delete n's mail
+	NOOP	- do nothing
+	QUIT	- shut down the connection and exit
+
